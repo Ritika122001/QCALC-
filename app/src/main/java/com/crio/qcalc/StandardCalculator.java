@@ -107,9 +107,7 @@ protected double result;
         divide((double) num1, (double) num2);
     }
 
-    public static void getVersion(){
-        System.out.println("Standard Calculator 1.0");
-    }
+
 
 
 
