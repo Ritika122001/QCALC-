@@ -2,7 +2,7 @@ package com.crio.qcalc;
 
 public class StandardCalculator {
 
-    
+
 protected double result;
 
 
@@ -106,5 +106,15 @@ protected double result;
         // result = num1/num2;
         divide((double) num1, (double) num2);
     }
+
+    public static void getVersion(){
+        System.out.println("Standard Calculator 1.0");
+    }
+
+
+
+
+
+
 
 }

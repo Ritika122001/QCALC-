@@ -16,7 +16,7 @@ public class ScientificCalculator extends StandardCalculator{
         multiply(a,a);
     }
 
-    
+
 public void tan(double a)
 {
     result = Math.tan(a);
@@ -49,6 +49,7 @@ public void printResult(){
     System.out.println("Scientific Calculator Result:"+ result );
 
 }
+
 
 
 

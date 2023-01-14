@@ -10,7 +10,8 @@ public class StandardCalculatorTest {
     private StandardCalculator standardCalculator;
 
     @BeforeEach
-    void setup() {
+
+    void setup(){
         standardCalculator = new StandardCalculator();
     }
 
