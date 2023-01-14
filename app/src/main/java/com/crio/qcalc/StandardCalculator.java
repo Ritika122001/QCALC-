@@ -77,11 +77,38 @@ protected double result;
 
     // }
 
-    public void multiply(double num1, double num2) {
-        result = num1 * num2;
-    }
+    public final void multiply(double num1, double num2) throws ArithmeticException {
+        if (num1 == Double.MAX_VALUE || num2 == Double.MAX_VALUE) {
+        throw new ArithmeticException("Double overflow: max value exceeded");
+        }
+        if (num1 == Double.POSITIVE_INFINITY || num2 == Double.POSITIVE_INFINITY) {
+        throw new ArithmeticException("Double overflow: positive infinity");
+        }
+        if (num1 == Double.NEGATIVE_INFINITY || num2 == Double.NEGATIVE_INFINITY) {
+        throw new ArithmeticException("Double overflow: negative infinity");
+        }
+        
+            result = num1 * num2;
+        }
+
+    // public void multiply(double num1, double num2) {
+
+    //     if(num2 == 0.0){
+
+    //         throw new ArithmeticException("Divide By Zero");
+
+    //     }
+    //     result = num1 * num2;
+    // }
 
     public void divide(double num1, double num2) {
+
+        if(num2 == 0.0){
+
+            throw new ArithmeticException("Divide By Zero");
+
+        }
+
         result = num1 / num2;
 
     }
